@@ -1,0 +1,18 @@
+#sub_img{
+    width: 1280px;
+    height: 250px;
+    background: url(./imgs/contact/sv1.png) center no-repeat;
+    background-size: cover;
+}
+#location_wrap{
+    width: 1280px;
+    height: 49px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+    position: relative;
+}
+#location_wrap img{
+    position: absolute;
+    right: 233px;
+    border-left: 1px solid lightgray;    
+}
