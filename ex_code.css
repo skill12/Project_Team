@@ -31,7 +31,7 @@ header:nth-child(2){
     position: absolute;                
     font-weight: bold;
 
-    right: 90px;
+    right: 20px;
     top: 5px;
     
 }
@@ -69,7 +69,7 @@ nav{
     width: 1280px;
     display: none;
     position: absolute;
-    z-index: 5;
+    z-index: 9999999;
 }
 #sub_container a:hover{color: blueviolet;}
 #sub_menu #menu_value{
@@ -80,6 +80,7 @@ nav{
     font-size: 1.5em;
     align-self: center;
     font-weight: bold;
+    text-align: center;
 }
 #sub_menu{                
     background-color: whitesmoke;
