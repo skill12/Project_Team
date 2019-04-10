@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+        
+        <link rel="stylesheet" href="./ex_code_board.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- bootstrap library적용 : w3schools.com에서 링크 복사(CDN)-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <script src="./ex_code.js"></script>
+
+
+    </head>
+
+    <body>
+        
+        <div id="page">
+            <header>
+                <a href="#"><img src="./imgs/sitemap_icon.png" alt="siteMap"></a>
+                <a href="#"><img src="./imgs/home_icon.png" alt="home"></a>
+                <a href="#" id="last_img"><img src="./imgs/admin_icon.png" alt="login"></a>
+                <p id="user_name">김주형</p>
+            </header>
+            <nav>
+                    <a href="http://skill12.dothome.co.kr/Project_Team/index.html" id="logo"><img src="./imgs/logo.png" alt="logo"></a>
+                <ul id="nav_menu">
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">정비서비스</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div id="sub_container">
+                <div id="sub_menu">
+                   <p id="menu_value"></p>
+                    <ul id="sub_1">
+                        <li><a href="#">CARIS</a></li>
+                        <li><a href="#">제조사</a></li>
+                        <li><a href="#">사업영역</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">인증현황</a></li>
+                    </ul>
+                    <ul id="sub_2">
+                        <li><a href="#">제동부품</a></li>
+                        <li><a href="#">타이어</a></li>                   
+                    </ul>
+                    <ul id="sub_3">
+                        <li><a href="#">이동정비(관리) 서비스</a></li>                    
+                    </ul>
+                    <ul id="sub_4">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">고객게시판</a></li>
+                        <li><a href="#">견적 및 문의</a></li>                    
+                    </ul>
+                </div>
+            </div>
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기까지 header및 nav 메뉴 -->
+
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 작업하시면 됩니다!! -->
+            <article>
+                <div id="sub_img"></div>
+                <div id="location_wrap">
+
+                    <img src="./imgs/contact/home_icon.png" alt="home">
+                    <ul id="location_p1">
+                            <a href="#"><li id="p1_first_li">제품 및 견적 문의</li></a>
+                            <a href="#"><li class="p1_child_li">공지사항</li></a>
+                            <a href="#"><li class="p1_child_li">고객 게시판</li></a>
+                            <a href="#"><li class="p1_child_li">제품 및 견적 문의</li></a>                            
+                    </ul>
+                </div>
+                <div class="title_wrap mt-5 mb-5"><h2 id="container_title">제품 및 견적문의</h2></div>
+
+                <div class="container">
+                    <div id=""></div>
+                    <table>
+                        <thead>
+                            <th></th>
+                        </thead>
+
+                    </table>
+
+                </div>
+                
+            </article>
+
+            <style>
+                #sub_img{
+                    width: 1280px;
+                    height: 250px;
+                    background: url(./imgs/board/sv4.png) center no-repeat;
+                    background-size: cover;
+                }
+                #location_wrap{
+                    width: 1280px;
+                    height: 50px;
+                    border-bottom: 1px solid lightgray;
+                    margin-bottom: 5px;
+                    position: relative;
+                }
+                #location_wrap img{
+                    position: absolute;
+                    right: 233px;
+                    border-left: 1px solid lightgray;    
+                }
+                /* /////////////////////////////////////////////////// */
+                #location_p1{
+                    position: absolute;
+                    right: 0px;
+                    z-index: 999;
+                }
+                #location_p1 a li{
+                    width: 233px;
+                    height: 49px;                        
+                }                    
+                #location_p1 a #p1_first_li{
+                    background: url(./imgs/contact/2depth_arrow.png) 90% center no-repeat;                        
+                    background-color: rgb(50, 50, 179);
+                    text-align: center;
+                    line-height: 3em;
+                    color: white;                                                
+                    font-weight: bold;
+                    border-right: 1px solid rgb(65, 63, 63);
+                }                    
+                #location_p1 a .p1_child_li{                       
+                    background: url(./imgs/contact/1depth_arrow.png) 90% center no-repeat;
+                    background-color: white;
+                    text-align: center;
+                    line-height: 3em;
+                    color: darkgray;
+                    font-weight: bold;
+                    display: none;
+                    border-bottom: 1px solid rgb(65, 63, 63);
+                    border-left: 1px solid rgb(65, 63, 63);
+                    border-right: 1px solid rgb(65, 63, 63);                        
+                }
+                /* ///////////////////////////////////////////////////////////////// */
+                .title_wrap{
+                    text-align:center;
+                    /* margin-bottom:30px !important;
+                    margin-top: 60px !important; */
+                }
+                h2#container_title{
+                    background:#3750a4;
+                    font-size:28px;
+                    font-weight:normal;
+                    padding:10px 20px !important;
+                    text-align:center;
+                    color:#fff;
+                    display:inline-block;
+                    border-radius:10px;
+                }
+            </style>
+
+            <script>
+                var isOpen=false;
+                $('#location_p1 a #p1_first_li').click(function(){
+                    if(!isOpen){
+                        $('#location_p1 a .p1_child_li').slideDown('slow');
+                        // css('display','block');
+                        isOpen=true;
+                    }else{
+                        $('#location_p1 a .p1_child_li').slideUp('slow');
+                        // css('display','none');
+                        isOpen=false;
+                    }
+                });
+                $('li.p1_child_li').mouseover(function(){                        
+                    $(this).css('background-color','rgb(238,238,238)');
+                });
+                $('li.p1_child_li').mouseleave(function(){                        
+                    $(this).css('background-color','white');
+                });
+            </script>
+
+
+            <!-- //////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 footer -->
+            <footer>
+                <img src="./imgs/foot_logo.png" alt="footlogo">                
+                <div>상호명 (주)나마스 대표 김민성 주소 서울시 합정동 369-15 한림빌딩 2층<br>
+                    Tel 02-322-2061~2 Fax 02-322-3261 사업자등록번호 312-86-04771</div>                    
+                <div>COPYRIGHT (C) (주)나마스 RIGHTS RESERVED.</div>
+            </footer>
+        </div>
+
+    </body>
+</html>

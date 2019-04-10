@@ -66,8 +66,8 @@ nav{
 }
 
 #sub_container{
-    width: 1280px;
-    display: none;
+    width: 1280px; 
+    display: none; 
     position: absolute;
     z-index: 9999999;
 }

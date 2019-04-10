@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+        
+        <link rel="stylesheet" href="./ex_code_board.css">
+        <link rel="stylesheet" href="./wt_board03.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+        <!-- bootstrap library적용 : w3schools.com에서 링크 복사(CDN)-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        
+        <script src="./ex_code.js"></script>
+        <script src="./wt_board03.js"></script>
+
+
+    </head>
+
+    <body>
+        
+        <div id="page">
+            <header>
+                <a href="#"><img src="./imgs/sitemap_icon.png" alt="siteMap"></a>
+                <a href="#"><img src="./imgs/home_icon.png" alt="home"></a>
+                <a href="#" id="last_img"><img src="./imgs/admin_icon.png" alt="login"></a>
+                <p id="user_name">김주형</p>
+            </header>
+            <nav>
+                    <a href="http://skill12.dothome.co.kr/Project_Team/index.html" id="logo"><img src="./imgs/logo.png" alt="logo"></a>
+                <ul id="nav_menu">
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">정비서비스</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div id="sub_container">
+                <div id="sub_menu">
+                   <p id="menu_value"></p>
+                    <ul id="sub_1">
+                        <li><a href="#">CARIS</a></li>
+                        <li><a href="#">제조사</a></li>
+                        <li><a href="#">사업영역</a></li>
+                        <li><a href="#">CONTACT US</a></li>
+                        <li><a href="#">인증현황</a></li>
+                    </ul>
+                    <ul id="sub_2">
+                        <li><a href="#">제동부품</a></li>
+                        <li><a href="#">타이어</a></li>                   
+                    </ul>
+                    <ul id="sub_3">
+                        <li><a href="#">이동정비(관리) 서비스</a></li>                    
+                    </ul>
+                    <ul id="sub_4">
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">고객게시판</a></li>
+                        <li><a href="#">견적 및 문의</a></li>                    
+                    </ul>
+                </div>
+            </div>
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기까지 header및 nav 메뉴 -->
+
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 작업하시면 됩니다!! -->
+            <article>
+                <div id="sub_img"></div>
+                <div id="location_wrap">
+
+                    <img src="./imgs/contact/home_icon.png" alt="home">
+                    <ul id="location_p1">
+                            <a href="#"><li id="p1_first_li">제품 및 견적 문의</li></a>
+                            <a href="#"><li class="p1_child_li">공지사항</li></a>
+                            <a href="#"><li class="p1_child_li">고객 게시판</li></a>
+                            <a href="#"><li class="p1_child_li">제품 및 견적 문의</li></a>                            
+                    </ul>
+                </div>
+                <div class="title_wrap mt-5 mb-5"><h2 id="container_title">제품 및 견적문의 글쓰기</h2></div>
+
+                <form action="aaa.php" method="POST">
+                    <div class="container mx-auto">                   
+                    
+                        <table class="table">
+                            <tr style="border-top: 2px solid blue;">
+                                <th class="wt_th pl-2" >이름</th>
+                                <td class="wt_td pl-2"><input type="text"></td>
+                            </tr>
+                            <tr>
+                                <th class="wt_th pl-2">비밀번호</th>
+                                <td class="wt_td pl-2"><input type="text" style="width: 30%"></td>
+                            </tr>
+                            <tr>
+                                <th class="wt_th pl-2">옵션</th>
+                                <td class="wt_td pl-2"><label for="chk1"><input type="checkbox" id="chk1" name="chk1">비밀글</label></td>
+                            </tr>
+                            <tr>
+                                <th class="wt_th pl-2">제목</th>
+                                <td class="wt_td pl-2"><input type="text" style="width: 100%"></td>
+                            </tr>
+                            <tr>
+                                <th class="wt_th pl-2">내용</th>
+                                <td class="wt_td pl-2"><textarea name="" id="" cols="30" rows="10" style="width: 100%; resize: none"></textarea></td>
+                            </tr>
+                            <tr style="border-bottom: 2px solid #ddd">
+                                <th class="wt_th pl-2">파일첨부</th>
+                                <td class="wt_td pl-2"><input type="file"></td>
+                            </tr>
+                        </table>
+
+                        <div class="text-center mt-3 mb-5">
+                            <input  class="btn btn-primary p-2 mr-4" type="submit" value="작성완료" id="write" name="write">
+                            <a href=""><button class="btn btn-danger p-2 ml-4">취소</button></a>
+                        </div>                   
+                    </div>
+                </form>
+                
+            </article>            
+
+
+            <!-- //////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 footer -->
+            <footer>
+                <img src="./imgs/foot_logo.png" alt="footlogo">                
+                <div>상호명 (주)나마스 대표 김민성 주소 서울시 합정동 369-15 한림빌딩 2층<br>
+                    Tel 02-322-2061~2 Fax 02-322-3261 사업자등록번호 312-86-04771</div>                    
+                <div>COPYRIGHT (C) (주)나마스 RIGHTS RESERVED.</div>
+            </footer>
+        </div>
+
+    </body>
+</html>
