@@ -1,0 +1,102 @@
+#sub_img{
+    width: 1280px;
+    height: 250px;
+    background: url(./imgs/contact/sv1.png) center no-repeat;
+    background-size: cover;
+}
+#location_wrap{
+    width: 1280px;
+    height: 49px;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+    position: relative;
+}
+#location_wrap img{
+    position: absolute;
+    right: 233px;
+    border-left: 1px solid lightgray;    
+}
+/* /////////////////////////////////////////////////// */
+#location_p1{
+    position: absolute;
+    right: 0px;
+    z-index: 999;
+}
+#location_p1 a li{
+    width: 233px;
+    height: 49px;                        
+}                    
+#location_p1 a #p1_first_li{
+    background: url(./imgs/contact/2depth_arrow.png) 90% center no-repeat;                        
+    background-color: rgb(50, 50, 179);
+    text-align: center;
+    line-height: 3em;
+    color: white;                                                
+    font-weight: bold;
+    border-right: 1px solid rgb(65, 63, 63);
+}                    
+#location_p1 a .p1_child_li{                       
+    background: url(./imgs/contact/1depth_arrow.png) 90% center no-repeat;
+    background-color: white;
+    text-align: center;
+    line-height: 3em;
+    color: darkgray;
+    font-weight: bold;
+    display: none;
+    border-bottom: 1px solid rgb(65, 63, 63);
+    border-left: 1px solid rgb(65, 63, 63);
+    border-right: 1px solid rgb(65, 63, 63);                        
+}
+/* /////////////////////////////////////////////////////////////// */
+
+article table#detail{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top: 60px !important;
+    width: 1100px;
+}
+article table#detail th{
+    color: #3750a4;    
+    font-size: 16px;
+    text-align: center;
+    padding: 15px 0 !important;
+    border-top: 2px solid #3750a4;
+    border-bottom: 1px solid #ddd;
+}
+article table td#date_td{
+    width: 150px;
+    text-align: end;
+    padding: 5px !important;
+    font-size: 13px;
+}
+article table td#name_td{    
+    text-align: end;
+    padding: 5px !important;
+    font-size: 13px;
+}
+article table tr#msg td{
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    line-height: 30rem;
+    padding: 0 10px !important;
+}
+article table tr#back td{
+    line-height: 3rem;
+    text-align: end;
+    padding-right: 20px !important;
+}
+article table tr#back td button{
+    width:100px;
+    background-color: #3750a4;
+    border: none;
+    border-radius: 5px;
+    color:#fff;
+    padding: 5px 0 !important;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 4px;
+    cursor: pointer;
+}
+
