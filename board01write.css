@@ -1,29 +1,9 @@
-*{margin: 0;padding: 0;}
- /* *{border: 1px dotted red}  */
-a{text-decoration: none}
-ul{list-style: none;}
-
-
-#mainimg{
-    display: block;
+#sub_img{
     width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
     height: 250px;
+    background: url(./imgs/board/sv4.png) center no-repeat;
+    background-size: cover;
 }
-
-#h2title{
-    background-color: #3750a4;
-    color: white;
-    display: inline-block;
-    font-size: 28px;
-    border-radius: 10px;
-    padding: 5px 20px !important;
-    margin-bottom: 80px;
-    margin-top: 50px;
-}
-
-/* ////////////////// */
 #location_wrap{
     width: 1280px;
     height: 50px;
@@ -36,6 +16,7 @@ ul{list-style: none;}
     right: 233px;
     border-left: 1px solid lightgray;    
 }
+/* /////////////////////////////////////////////////// */
 #location_p1{
     position: absolute;
     right: 0px;
@@ -46,8 +27,8 @@ ul{list-style: none;}
     height: 49px;                        
 }                    
 #location_p1 a #p1_first_li{
-    background: url(./imgs/contact/2depth_arrow.png) 94% center no-repeat;                        
-    background-color: rgb(50, 50, 179);
+    background: url(./imgs/contact/2depth_arrow.png) 90% center no-repeat;                        
+    background-color: #3750a4;
     text-align: center;
     line-height: 3em;
     color: white;                                                
@@ -55,7 +36,7 @@ ul{list-style: none;}
     border-right: 1px solid rgb(65, 63, 63);
 }                    
 #location_p1 a .p1_child_li{                       
-    background: url(./imgs/contact/1depth_arrow.png) 94% center no-repeat;
+    background: url(./imgs/contact/1depth_arrow.png) 90% center no-repeat;
     background-color: white;
     text-align: center;
     line-height: 3em;
@@ -66,4 +47,29 @@ ul{list-style: none;}
     border-left: 1px solid rgb(65, 63, 63);
     border-right: 1px solid rgb(65, 63, 63);                        
 }
-/* ////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////// */
+.title_wrap{
+    text-align:center;
+    /* margin-bottom:30px !important;
+    margin-top: 60px !important; */
+}
+h2#container_title{
+    background:#3750a4;
+    font-size:28px;
+    font-weight:normal;
+    padding:10px 20px !important;
+    text-align:center;
+    color:#fff;
+    display:inline-block;
+    border-radius:10px;
+}
+th.wt_th{
+    width: 120px;
+    height: 40px;
+    background-color: #3750a4;
+    
+    vertical-align: middle !important;
+}
+td.wt_td{
+    vertical-align: middle !important;                    
+}           
