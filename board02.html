@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+
+        <script src="./jquery-3.3.1.min.js"></script>
+        
+        <link rel="stylesheet" href="./board02.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script src="./manufacturer.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                
+                $('#com1').on('click', function(){
+                    $('#area1').load('#com_sub');
+                });
+
+            });
+        </script>
+
+        <!-- bootstrap library적용 : w3schools.com에서 링크 복사(CDN)-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+    </head>
+
+    <body>
+        
+        <div id="page" >
+            <header>
+                <a href="#"><img src="./imgs/sitemap_icon.png" alt="siteMap"></a>
+                <a href="#"><img src="./imgs/home_icon.png" alt="home"></a>
+                <a href="#" id="last_img"><img src="./imgs/admin_icon.png" alt="login"></a>
+                <p id="user_name">김주형</p>
+            </header>
+            <nav>
+                <img src="./imgs/logo.png" alt="logo" id="logo">
+                <ul id="nav_menu">
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">정비서비스</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div id="sub_container">
+                <div id="sub_menu">
+                   <p id="menu_value">Sample</p>
+                    <ul id="sub_1">
+                        <li><a href="./carsis.html">CARIS</a></li>
+                        <li><a href="./manufacturer.html">제조사</a></li>
+                        <li><a href="./business.html">사업영역</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li><a href="#">인증현황</a></li>
+                    </ul>
+                    <ul id="sub_2">
+                        <li><a href="#">제동부품</a></li>
+                        <li><a href="#">타이어</a></li>                   
+                    </ul>
+                    <ul id="sub_3">
+                        <li><a href="./moveService.html">이동정비(관리) 서비스</a></li>                    
+                    </ul>
+                    <ul id="sub_4">
+                        <li><a href="./board01.html">공지사항</a></li>
+                        <li><a href="./board02.html">고객게시판</a></li>
+                        <li><a href="./board03.html">견적 및 문의</a></li>                    
+                    </ul>
+                </div>
+            </div>
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기까지 header및 nav 메뉴 -->
+
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 작업하시면 됩니다!! -->
+
+            <div id="first_image"></div>
+
+            <style>
+                #first_image{
+                    width: 1280px;
+                    height: 250px;
+                    background: url(./imgs/imgs/sv1.png) center no-repeat;
+                    background-size: cover;
+                }
+            </style>
+
+            <article>
+            <div id="sub_img"></div>
+            <div id="location_wrap">
+
+                <a href="./index.html"><img src="./imgs/contact/home_icon.png" alt="home"></a>
+                <ul id="location_p1">
+                        <a href="#"><li id="p1_first_li">고객게시판</li></a>
+                        <a href="./board01.html"><li class="p1_child_li">공지사항</li></a>
+                        <a href="./board02.html"><li class="p1_child_li">고객게시판</li></a>
+                        <a href="./board03.html"><li class="p1_child_li">제품 및 견적 문의</li></a>
+                </ul>
+            </div>
+
+            <style>
+                #location_wrap{
+                width: 1280px;
+                height: 50px;
+                border-bottom: 1px solid lightgray;
+                margin-bottom: 5px;
+                position: relative;
+            }
+            #location_wrap img{
+                position: absolute;
+                right: 233px;
+                border-left: 1px solid lightgray;    
+            }
+            /* /////////////////////////////////////////////////// */
+            #location_p1{
+                position: absolute;
+                right: 0px;
+                z-index: 999;
+            }
+            #location_p1 a li{
+                width: 233px;
+                height: 49px;                        
+            }                    
+            #location_p1 a #p1_first_li{
+                background: url(./imgs/contact/2depth_arrow.png) 90% center no-repeat;                        
+                background-color: rgb(50, 50, 179);
+                text-align: center;
+                line-height: 3em;
+                color: white;                                                
+                font-weight: bold;
+                border-right: 1px solid rgb(65, 63, 63);
+            }                    
+            #location_p1 a .p1_child_li{                       
+                background: url(./imgs/contact/1depth_arrow.png) 90% center no-repeat;
+                background-color: white;
+                text-align: center;
+                line-height: 3em;
+                color: darkgray;
+                font-weight: bold;
+                display: none;
+                border-bottom: 1px solid rgb(65, 63, 63);
+                border-left: 1px solid rgb(65, 63, 63);
+                border-right: 1px solid rgb(65, 63, 63);                        
+            }
+            </style>
+
+            <script>
+                $(document).ready(function(){
+
+            var isOpen=false;
+            $('#location_p1 a #p1_first_li').click(function(){
+                if(!isOpen){
+                    $('#location_p1 a .p1_child_li').slideDown('slow');
+                    // css('display','block');
+                    isOpen=true;
+                }else{
+                    $('#location_p1 a .p1_child_li').slideUp('slow');
+                    // css('display','none');
+                    isOpen=false;
+                }
+            });
+            $('li.p1_child_li').mouseover(function(){                        
+                $(this).css('background-color','rgb(238,238,238)');
+            });
+            $('li.p1_child_li').mouseleave(function(){                        
+                $(this).css('background-color','white');
+            });
+
+            });
+            </script>
+
+        <div style="text-align: center">
+            <div id="borad2" class="mt-5 mb-5">
+                <h3>고객게시판</h3>
+            </div>        
+
+            <div id="borad" class="mt-5 mb-2" style="text-align: start">
+                <div id="bo_list_total" class="mb-2">
+                    <span>Total 2건 1 페이지</span>
+                </div>
+                <div id="container" class="border border-primary border-right-0 border-bottom-0 border-left-0">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <th>번호</th>
+                                <th>제목</th>
+                                <th>글쓴이</th>
+                                <th>날짜</th>
+                                <th>조회</th>
+                            </tr>
+                        </tbody>                   
+                        
+                        <tbody style="text-align: start">
+                            <tr>
+                                <td>2</td>
+                                <td>제품 관련 궁금사항 문의입니다.</td>
+                                <td>조정호</td>
+                                <td>10-20</td>
+                                <td>330</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>견적문의 드립니다.</td>
+                                <td>admin</td>
+                                <td>10-20</td>
+                                <td>316</td>
+                            </tr>
+                        </tbody>
+                        
+                    </table>
+                </div>
+            </div>
+            
+            <style>
+                #bo_list_total{
+                    font-size: 13px;
+                    color: lightgray;
+                    font-style: unset;
+                }
+                #borad2{
+                    border-radius: 10px;
+                    
+                    color: aliceblue;
+                    height: 45px;                                        
+                }
+                div#borad2 h3{
+                    background-color: rgb(48, 48, 168) !important;
+                    display: inline-block;
+                    border-radius: 5px;
+                    padding: 5px !important;
+                }
+                #borad#container.table{
+                    border-top-color: rgb(48, 48, 168);
+                }
+            </style>
+            <div class="container mt-5" style="text-align: end;">
+                <a href="wt_board02.html"><button id="btn1" class="btn mb-5" type="submit">글쓰기</button></a>                
+            </div>           
+
+            <style>
+                #btn1{
+                    background-color: rgb(74, 74, 180);
+                    color: aliceblue;
+                    width: 80px;
+                    height: 40px;
+                }
+            </style>
+
+            <form action="" class="mb-5">
+                <select name="sfl" id="sfl">
+                    <option value="">제목</option>
+                    <option value="">내용</option>
+                    <option value="">제목+내용</option>
+                    <option value="">회원아이디</option>
+                    <option value="">글쓴이</option>
+                </select>
+                <input type="text" name="stx" class="frm_input required" size="15" maxlength="20">
+                <input type="submit" value="검색" class="btn_submit" id="btn_submit">
+            </form>
+
+            <style>
+                #btn_submit{
+                    background-color: rgb(198, 198, 236);
+                    color: rgb(35, 35, 160);
+                }
+            </style>
+        </div>
+
+
+            <!-- //////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 footer -->
+            <footer>
+                <img src="./imgs/foot_logo.png" alt="footlogo">                
+                <div>상호명 (주)나마스 대표 김민성 주소 서울시 합정동 369-15 한림빌딩 2층<br>
+                    Tel 02-322-2061~2 Fax 02-322-3261 사업자등록번호 312-86-04771</div>                    
+                <div>COPYRIGHT (C) (주)나마스 RIGHTS RESERVED.</div>
+            </footer>
+        </div>
+
+    </body>
+</html>

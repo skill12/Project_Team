@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title></title>
+
+        <script src="./jquery-3.3.1.min.js"></script>
+        
+        <link rel="stylesheet" href="./manufacturer.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script src="./manufacturer.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                
+                $('#com1').on('click', function(){
+                    $('#area1').load('#com_sub');
+                });
+
+            });
+        </script>
+
+    </head>
+
+    <body>
+        
+        <div id="page">
+            <header>
+                <a href="#"><img src="./imgs/sitemap_icon.png" alt="siteMap"></a>
+                <a href="#"><img src="./imgs/home_icon.png" alt="home"></a>
+                <a href="#" id="last_img"><img src="./imgs/admin_icon.png" alt="login"></a>
+                <p id="user_name">김주형</p>
+            </header>
+            <nav>
+                <img src="./imgs/logo.png" alt="logo" id="logo">
+                <ul id="nav_menu">
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">정비서비스</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div id="sub_container">
+                <div id="sub_menu">
+                   <p id="menu_value">Sample</p>
+                    <ul id="sub_1">
+                        <li><a href="./carsis.html">CARIS</a></li>
+                        <li><a href="./manufacturer.html">제조사</a></li>
+                        <li><a href="./business.html">사업영역</a></li>
+                        <li><a href="./contact.html">CONTACT US</a></li>
+                        <li><a href="#">인증현황</a></li>
+                    </ul>
+                    <ul id="sub_2">
+                        <li><a href="#">제동부품</a></li>
+                        <li><a href="#">타이어</a></li>                   
+                    </ul>
+                    <ul id="sub_3">
+                        <li><a href="./moveService.html">이동정비(관리) 서비스</a></li>                    
+                    </ul>
+                    <ul id="sub_4">
+                        <li><a href="./board01.html">공지사항</a></li>
+                        <li><a href="./board02.html">고객게시판</a></li>
+                        <li><a href="./board03.html">견적 및 문의</a></li>                    
+                    </ul>
+                </div>
+            </div>
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기까지 header및 nav 메뉴 -->
+
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 작업하시면 됩니다!! -->
+
+            <div id="first_image"></div>
+
+            <style>
+                #first_image{
+                    width: 1280px;
+                    height: 250px;
+                    background: url(./imgs/imgs/sv1.png) center repeat;
+                    background-size: cover;
+                }
+            </style>
+
+        <article>
+            <div id="sub_img"></div>
+            <div id="location_wrap">
+
+                <a href="./index.html"><img src="./imgs/contact/home_icon.png" alt="home"></a>
+                <ul id="location_p1">
+                        <a href="#"><li id="p1_first_li">제조사</li></a>
+                        <a href="./carsis.html"><li class="p1_child_li">CARSIS</li></a>
+                        <a href="./manufacturer.html"><li class="p1_child_li">제조사</li></a>
+                        <a href="./business.html"><li class="p1_child_li">사업영역</li></a>
+                        <a href="./contact.html"><li class="p1_child_li">CONTACT US</li></a>
+                        <a href="#"><li class="p1_child_li">인증현황</li></a>
+                </ul>
+            </div>
+
+            <style>
+                #location_wrap{
+                width: 1280px;
+                height: 50px;
+                border-bottom: 1px solid lightgray;
+                margin-bottom: 5px;
+                position: relative;
+            }
+            #location_wrap img{
+                position: absolute;
+                right: 233px;
+                border-left: 1px solid lightgray;    
+            }
+            /* /////////////////////////////////////////////////// */
+            #location_p1{
+                position: absolute;
+                right: 0px;
+                z-index: 999;
+            }
+            #location_p1 a li{
+                width: 233px;
+                height: 49px;                        
+            }                    
+            #location_p1 a #p1_first_li{
+                background: url(./imgs/contact/2depth_arrow.png) 90% center no-repeat;                        
+                background-color: rgb(50, 50, 179);
+                text-align: center;
+                line-height: 3em;
+                color: white;                                                
+                font-weight: bold;
+                border-right: 1px solid rgb(65, 63, 63);
+            }                    
+            #location_p1 a .p1_child_li{                       
+                background: url(./imgs/contact/1depth_arrow.png) 90% center no-repeat;
+                background-color: white;
+                text-align: center;
+                line-height: 3em;
+                color: darkgray;
+                font-weight: bold;
+                display: none;
+                border-bottom: 1px solid rgb(65, 63, 63);
+                border-left: 1px solid rgb(65, 63, 63);
+                border-right: 1px solid rgb(65, 63, 63);                        
+            }
+            </style>
+
+            <script>
+                $(document).ready(function(){
+
+            var isOpen=false;
+            $('#location_p1 a #p1_first_li').click(function(){
+                if(!isOpen){
+                    $('#location_p1 a .p1_child_li').slideDown('slow');
+                    // css('display','block');
+                    isOpen=true;
+                }else{
+                    $('#location_p1 a .p1_child_li').slideUp('slow');
+                    // css('display','none');
+                    isOpen=false;
+                }
+            });
+            $('li.p1_child_li').mouseover(function(){                        
+                $(this).css('background-color','rgb(238,238,238)');
+            });
+            $('li.p1_child_li').mouseleave(function(){                        
+                $(this).css('background-color','white');
+            });
+
+            });
+            </script>
+
+            <br>
+            <br>
+
+            <div id="menu1">
+                <br>
+                <br>
+                <h3>사업방향</h3>
+                <br>
+                <br>
+            </div>
+
+            
+            <div id="box1" style="float:left;">
+                <div class="box_main1">
+                    <h4>국 내(After Market)</h4>
+                </div>
+                <div class="box_sub1">
+                    <p><img src="./imgs/imgs/sub1_3bullet.png" alt=""> Carsis 브랜드 인지도 확대</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet.png" alt=""> 영업요 차량 부품 전문 브랜드 구축</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet.png" alt=""> 전국 단위 유통 및 A/S네트워크 구축</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet.png" alt=""> 외제차 및 국산차 부품 유통회사와의 제휴</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet.png" alt=""> 국내 제휴 부품사 지속 개발</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet.png" alt=""> 국내 연구소를 통한 AM부품(Braking System)개발(신규 시장 발굴)</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet.png" alt=""> BAIC Group 및 기타 해외 제조사를 통한 품목 확대</p>
+                </div>
+            </div>
+            
+
+            <div id="box2" style="float:left;">
+                <div class="box_main2">
+                    <h4>해 외(OEM/AM)</h4>
+                </div>
+                <div class="box_sub2">
+                    <p><img src="./imgs/imgs/sub1_3bullet2.png" alt=""> 국산 부품 조립차량 제조사 대상 부품 OEM공급(동남아 및 중동)</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet2.png" alt=""> 해외 부품 조립차량 제조사 대상 부품 OEM공급(동남아 및 러시아, 중동 등)</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet2.png" alt=""> 해외 After Market 유통사와의 제휴</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet2.png" alt=""> 해외 수출 무역업체와</p>
+                    <p><img src="./imgs/imgs/sub1_3bullet2.png" alt=""> Carsis 브랜드 인지도 확대</p>
+                </div>                
+            </div>
+
+            <div class="none"></div>
+
+            <style>
+                #menu1{
+                    text-align: center;
+                    color: rgb(48, 48, 168);
+                }
+            </style>
+
+            <style>
+                #box1{
+                    border: 0px solid; padding: 10px;
+                    background-color: rgb(245, 239, 231);
+                    width: 500px;
+                    margin-left: 8%;
+                }
+                .box_main1{
+                    background-color: rgb(107, 107, 255);
+                    color: aliceblue;
+                    text-align: center;
+                    width: 500px;
+                    height: 30px;
+                }
+                #box2{
+                    border: 0px solid; padding: 10px;
+                    background-color: rgb(245, 239, 231);
+                    width: 500px;
+                    float: right;
+                    margin-left: 20px;
+                }
+                .none{
+                    clear: both;
+                }
+                .box_main2{
+                    background-color: rgb(78, 78, 196);
+                    color: aliceblue;
+                    text-align: center;
+                    width: 500px;
+                    height: 30px;
+                }
+            </style>
+
+            <br>
+            <br>
+            <h3 id="menu2">국내 마케팅</h3>
+            <br>
+            <br>
+
+            <style>
+                    #menu2{
+                        text-align: center;
+                        color: rgb(48, 48, 168);
+                    }
+            </style>
+
+            <div id="box_images1" style="float:left;">
+                <h4><img src="./imgs/imgs/sub1_3logo.png" id="box_logo">[ Car Oasis ] 자동차 부품 전문 브랜드</h4>
+                <div class="imgbox">
+                    <div id="tb"><p><img src="./imgs/imgs/product_icon.png" alt="">자체 (직영) 정비소 운영</p></div>
+                    <div id="tb2">
+                        <span><img src="./imgs/imgs/sub1_3maketing_img1.png" id="img1"></span>
+                        <span><img src="./imgs/imgs/sub1_3maketing_img2.png" ></span>
+                        <img src="./imgs/imgs/sub1_3maketing_img3.png" >
+                        <img src="./imgs/imgs/sub1_3maketing_img4.png" >
+                    </div>
+                </div>
+
+                <div class="imgbox2">
+                    <div id="tb"><p><img src="./imgs/imgs/product_icon.png" alt="">자체 (직영) 정비소 운영</p></div>
+                    <div id="tb2">
+                        <span><img src="./imgs/imgs/sub1_3icon1.png" alt=""></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="box_images2" style="float:left;">
+                <div id="radius_box">
+                    <p>타이어 및 BRAKING SYS</p>
+                    <p>(초기 영업, NETWORK구축)</p>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./imgs/imgs/sub1_3arrow.png" alt="">
+                </div>
+                <br>
+                <br>
+
+                <div id="radius_box">
+                    <p>품목확대(DISC,PAD,CV-JOINT 등)</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./imgs/imgs/sub1_3arrow.png" alt="">
+                </div>
+                <br>
+                <br>
+
+                <div id="radius_box">
+                    <p>영업용 차량 부품 브랜드</p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img src="./imgs/imgs/sub1_3arrow.png" alt="">
+                </div>
+                <br>
+                <br>
+
+                <div id="radius_box">
+                    <p>北 영업용 파량으로 대상 확대</p>
+
+                </div>
+            </div>
+
+            <div class="none2"></div>
+
+            <style>
+                #box_images1{
+                    margin-left: 8%;
+                }
+                .imgbox{
+                    border: 1px solid lightgray;
+                    width: 500px;
+                    height: 300px;
+                }
+                .imgbox2{
+                    border: 1px solid lightgray;
+                    width: 500px;
+                    height: 150px;
+                    margin-top: 10px;
+                }
+                #tb{
+                    background-color: rgb(48, 48, 168);
+                    color: aliceblue;
+                    width: 500px;
+                }
+                .imgbox#tb2#img1{
+                    margin-top: 10px;
+                }
+                #radius_box{
+                    border-radius: 20px;
+                    background-color: rgb(232, 236, 255);
+                    width: 450px;
+                    height: 100px;
+                }
+                #box_images2{
+                    text-align: center;
+                    margin-left: 100px;
+                }
+                .none2{
+                    clear: both;
+                }
+            </style>
+
+            <br>
+            <br>
+            <h3 id="menu3">국내 마케팅</h3>
+            <br>
+            <br>
+
+            <img src="./imgs/imgs/sub1_3map.png" id="map_image">
+            <br>
+            <br>
+            <br>
+
+            <style>
+                #menu3{
+                    text-align: center;
+                    color: rgb(48, 48, 168);
+                }
+                #map_image{
+                    text-align: center;
+                    margin-left: 8%;
+                }
+            </style>
+
+
+
+            <!-- //////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 footer -->
+            <footer>
+                <img src="./imgs/foot_logo.png" alt="footlogo">                
+                <div>상호명 (주)나마스 대표 김민성 주소 서울시 합정동 369-15 한림빌딩 2층<br>
+                    Tel 02-322-2061~2 Fax 02-322-3261 사업자등록번호 312-86-04771</div>                    
+                <div>COPYRIGHT (C) (주)나마스 RIGHTS RESERVED.</div>
+            </footer>
+        </div>
+
+    </body>
+</html>
