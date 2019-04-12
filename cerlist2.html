@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>main</title>
+        <link rel="stylesheet" href="./main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./main.js"></script>
+
+        <style>
+                #location_p1{
+                              position: absolute;
+                              right: 0px;
+                              z-index: 999;
+                          }
+                          #location_p1 a li{
+                              width: 233px;
+                              height: 49px;                        
+                          }                    
+                          #location_p1 a #p1_first_li{
+                              background: url(./imgs/contact/2depth_arrow.png) 90% center no-repeat;                        
+                              background-color: rgb(50, 50, 179);
+                              text-align: center;
+                              line-height: 3em;
+                              color: white;                                                
+                              font-weight: bold;
+                              border-right: 1px solid rgb(65, 63, 63);
+                          }                    
+                          #location_p1 a .p1_child_li{                       
+                              background: url(./imgs/contact/1depth_arrow.png) 90% center no-repeat;
+                              background-color: white;
+                              text-align: center;
+                              line-height: 3em;
+                              color: darkgray;
+                              font-weight: bold;
+                              display: none;
+                              border-bottom: 1px solid rgb(65, 63, 63);
+                              border-left: 1px solid rgb(65, 63, 63);
+                              border-right: 1px solid rgb(65, 63, 63);                        
+                          }
+      
+              </style>
+    </head>
+    <body>   
+        <div id="page">
+            <header>
+                <a href="#"><img src="./imgs/sitemap_icon.png" alt="siteMap"></a>
+                <a href="#"><img src="./imgs/home_icon.png" alt="home"></a>
+                <a href="login.html" id="last_img"><img src="./imgs/admin_icon.png" alt="login"></a>
+                <p id="user_name">사용자 ID 영역</p>
+            </header>
+            <nav>
+                <a href="#" id="logo"><img src="./imgs/logo.png" alt="logo"></a>                
+                <ul id="nav_menu">
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">정비서비스</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div id="sub_container">
+                <div id="sub_menu">
+                   <p id="menu_value"></p>
+                    <ul id="sub_1">
+                        <li><a href="main.html">CARIS</a></li>
+                        <li><a href="./manufacturer.html">제조사</a></li>
+                        <li><a href="./business.html">사업영역</a></li>
+                        <li><a href="./contact.html">CONTACT US</a></li>
+                        <li>
+                            <a href="cer.html">인증현황</a></li>
+                    </ul>
+                    <ul id="sub_2">
+                        <li><a href="productlist.html">제동부품</a></li>
+                        <li><a href="productlist2.html">타이어</a></li>                   
+                    </ul>
+                    <ul id="sub_3">
+                        <li><a href="./moveService.html">이동정비(관리) 서비스</a></li>                    
+                    </ul>
+                    <ul id="sub_4">
+                        <li><a href="./board01.html">공지사항</a></li>
+                        <li><a href="./board02.html">고객게시판</a></li>
+                        <li><a href="./board03.html">견적 및 문의</a></li>                    
+                    </ul>
+                </div>
+            </div>
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기까지 header및 nav 메뉴 -->
+
+          <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 작업하시면 됩니다!! -->
+            <article class="mainarticle"><p>
+                    <img id="cerbanner" src="./imgs/imgs02/cerbanner.PNG" alt="cerbanner" width="100%"> 
+    
+                 
+
+                <div class="boxcnt">
+                <p id="info">Total <p id="cercnt"> 2 </p> 건 
+                <p id="pagecnt"> 1 </p> 페이지</p></div>
+
+                <img style="width:1260px;" src="./imgs/imgs02/hr.PNG" alt="">
+
+                <div style="text-align:center; width: 1260px;">
+                        <table style="width:1260px;" class="container">
+                            <thead>
+                            <tr>
+                                <th style="border-bottom:rgb(50, 50, 179);"> 자율안전확인 신고확인증(PCR)(KC인증) </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td style="text-align:left;">
+                                        <div style="width:1260px;" class="list-group">
+                                            <hr>
+                                               <p>작성자 <strong>최고관리자</strong>    16-11-09 15:22 조회252회 댓글0건</p>
+                                               <hr>
+                                        </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                    <td>
+                                            <div style="width:1260px;" class="list-group list-group-flush">
+                                                 <img style="width:1260px;" src="./imgs/imgs02/certi1.jpg" alt="">
+                                                 <img style="width:1260px;" src="./imgs/imgs02/certi2.jpg" alt="">
+                                                 <img style="width:1260px;" src="./imgs/imgs02/certi3.jpg" alt="">
+                                            </div>
+                                    </td>
+                            </tr>
+                        </tbody>
+                        </table>
+                       </div>
+
+        <div id="finddocboxwrap" style="clear: both;">
+
+                <fieldset style="margin-top:20px;" id="finddocbox">
+                        <legend id="finddoc">게시물 검색</legend>
+                        <form name="fsearch" method="get">
+                        <input type="hidden" name="bo_table" value="1_5">
+                        <input type="hidden" name="sca" value="">
+                        <input type="hidden" name="sop" value="and">
+                        <label for="sfl" class="sound_only">검색대상</label>
+                        <select name="sfl" id="sfl">
+                            <option value="wr_subject">제목</option>
+                            <option value="wr_content">내용</option>
+                            <option value="wr_subject||wr_content">제목+내용</option>
+                            <option value="mb_id,1">회원아이디</option>
+                            <option value="wr_name,1">글쓴이</option>
+                        </select>
+                        <label for="stx" class="sound_only">검색어(필수)</label>
+                        <input type="text" name="stx" value="" required id="stx" class="frm_input required" size="15" maxlength="20">
+                        <input type="submit" value="검색" id="btn_submit">
+                        </form>
+                    </fieldset>        
+        </div>                
+        </article>
+
+        <!-- //////////////////////////////////////////////////////////////// -->
+        <!-- 여기부터 footer -->
+        <footer style="clear:both">
+            <img src="./imgs/foot_logo.png" alt="footlogo">                
+            <div>상호명 (주)나마스 대표 김민성 주소 서울시 합정동 369-15 한림빌딩 2층<br>
+                Tel 02-322-2061~2 Fax 02-322-3261 사업자등록번호 312-86-04771</div>                    
+            <div>COPYRIGHT (C) (주)나마스 RIGHTS RESERVED.</div>
+        </footer>
+    </div>
+    <script>
+            var isOpen=false;
+            $('#location_p1 a #p1_first_li').click(function(){
+                if(!isOpen){
+                    $('#location_p1 a .p1_child_li').slideDown('slow');
+                    // css('display','block');
+                    isOpen=true;
+                }else{
+                    $('#location_p1 a .p1_child_li').slideUp('slow');
+                    // css('display','none');
+                    isOpen=false;
+                }
+            });
+            $('li.p1_child_li').mouseover(function(){                        
+                $(this).css('background-color','rgb(238,238,238)');
+            });
+            $('li.p1_child_li').mouseleave(function(){                        
+                $(this).css('background-color','white');
+            });
+        </script>
+</body>
+</html>

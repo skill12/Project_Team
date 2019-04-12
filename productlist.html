@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>main</title>
+        <link rel="stylesheet" href="./main.css">
+        <link rel="stylesheet" href="./index.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./main.js"></script>
+        <script src="./index.js"></script>
+
+        <style>
+
+                #location_p1{
+                              position: absolute;
+                              right: 0px;
+                              z-index: 999;
+                          }
+                          #location_p1 a li{
+                              width: 233px;
+                              height: 49px;                        
+                          }                    
+                          #location_p1 a #p1_first_li{
+                              background: url(./imgs/contact/2depth_arrow.png) 90% center no-repeat;                        
+                              background-color: rgb(50, 50, 179);
+                              text-align: center;
+                              line-height: 3em;
+                              color: white;                                                
+                              font-weight: bold;
+                              border-right: 1px solid rgb(65, 63, 63);
+                          }                    
+                          #location_p1 a .p1_child_li{                       
+                              background: url(./imgs/contact/1depth_arrow.png) 90% center no-repeat;
+                              background-color: white;
+                              text-align: center;
+                              line-height: 3em;
+                              color: darkgray;
+                              font-weight: bold;
+                              display: none;
+                              border-bottom: 1px solid rgb(65, 63, 63);
+                              border-left: 1px solid rgb(65, 63, 63);
+                              border-right: 1px solid rgb(65, 63, 63);                        
+                          }
+                          .container{
+                              font-family: 'namsan';
+                          }   
+              </style>
+    </head>
+    <body>   
+        <div id="page">
+            <header>
+                <a href="#"><img src="./imgs/sitemap_icon.png" alt="siteMap"></a>
+                <a href="#"><img src="./imgs/home_icon.png" alt="home"></a>
+                <a href="login.html" id="last_img"><img src="./imgs/admin_icon.png" alt="login"></a>
+                <p id="user_name">사용자 ID 영역</p>
+            </header>
+            <nav>
+                <a href="#" id="logo"><img src="./imgs/logo.png" alt="logo"></a>                
+                <ul id="nav_menu">
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">정비서비스</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div id="sub_container">
+                <div id="sub_menu">
+                   <p id="menu_value"></p>
+                    <ul id="sub_1">
+                        <li><a href="./index.html">CARIS</a></li>
+                        <li><a href="./manufacturer.html">제조사</a></li>
+                        <li><a href="./business.html">사업영역</a></li>
+                        <li><a href="contact.html">CONTACT US</a></li>
+                        <li>
+                            <a href="cer.html">인증현황</a></li>
+                    </ul>
+                    <ul id="sub_2">
+                        <li><a href="productlist.html">제동부품</a></li>
+                        <li><a href="tirelist.html">타이어</a></li>                   
+                    </ul>
+                    <ul id="sub_3">
+                        <li><a href="./moveService.html">이동정비(관리) 서비스</a></li>                    
+                    </ul>
+                    <ul id="sub_4">
+                        <li><a href="./board01.html">공지사항</a></li>
+                        <li><a href="./board02.html">고객게시판</a></li>
+                        <li><a href="./board03.html">견적 및 문의</a></li>                    
+                    </ul>
+                </div>
+            </div>
+
+            
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기까지 header및 nav 메뉴 -->
+
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 작업하시면 됩니다!! -->
+            <article class="mainarticle" style="font-family:'namsan';">
+                <img id="cerbanner" src="./imgs/imgs02/cerbanner.PNG" alt="cerbanner" width="100%"> 
+                 <div style="width: 1260px;" id="sub_img"></div>
+                 <div id="location_wrap"></div>
+                <div class="boxcnt"><div style=" display: inline; font-size:15px; font-family: 'namsan';">Total 8 건</div></div>               
+           
+        <div style="clear:both;">
+            <p style="font-size:20px; color: rgb(50, 50, 179); margin-top: 20px; float: left;" >찾으시는 제품이 있으신가요?
+                    <img src="./imgs/imgs02/find.PNG" alt="">
+                    <div>
+                        <select style="display: inline-block;" name="sfl" id="sfl">
+                            <option value="wr_subject">제품명</option>
+                            <option value="wr_content">제품특징</option>
+                            <option value="wr_subject||wr_content">상세설명</option>
+                            <option value="mb_id1">전체</option>
+                        </select>
+                        <input style="margin-left:50px; display: inline-block; width:350px; height:50px; border-radius: 10px; border: 1px solid gray;" type="text">
+                        <input style="margin-left:50px; background-image: './imgs/bg_btn;'" type="button" value="Search">
+                    </div>    
+            </p> 
+            
+        <ul id="gall_ul" style="clear:both;">
+                <li class="gall_li " style="width: 500px; position: relative; padding: 20px 20px; float: left;">
+                    <ul style="margin-top:10px;" class="gall_con">
+                        <li class="gall_href"><a href="breakinfo1.html"><img src="./imgs/imgs02/product1.PNG" alt="cer1" width="500" height="274"></a></li>
+                        <li class="gall_text_href"><h2 style="display:inline-block;">제품명</h2> <a style="margin-top: 10px; color:rgb(50, 50, 179);" href="breakinfo1.html"> Carsis(BAIC Autoyong) 브레이크 패드</a></li>
+                        <li class="gall_text_href"><strong>특징</strong> <a style="margin-top: 20px; color:gray;" href="breakinfo1.html">북경기차가 제조하는 체종에 장착되는 OEM 순정부품</a></li>
+                    </ul>
+                </li>
+
+                <li class="gall_li " style="width: 500px; position: relative;  padding: 20px 20px; float:right;">
+                    <ul class="gall_con">
+                        <li class="gall_href"><a href="breakinfo2.html"><img src="./imgs/imgs02/product2.PNG" alt="" width="500" height="274"></a></li>
+                        <li class="gall_text_href"><strong>제품명</strong> <a style="margin-top: 10px; color:rgb(50, 50, 179);" href="breakinfo2.html">Carsis 브레이크 패드</a></li>
+                        <li class="gall_text_href"><strong>특징</strong> <a style="margin-top: 20px; color:gray;" href="breakinfo2.html">비석면 마찰재로 생산된 OEM 순정 부품</a></li>
+                   </ul>
+                </li>
+        </ul>
+
+        <ul id="gall_ul" style="clear:both;">
+                <li class="gall_li " style=" width: 400px;  position: relative; padding: 20px 20px; float: left;">
+                    <ul class="gall_con">
+                        <li class="gall_href"><a href="breakinfo3.html"><img src="./imgs/imgs02/product3.PNG" alt="cer1" width="500" height="274"></a></li>
+                        <li class="gall_text_href"><strong>제품명</strong> <a style="margin-top: 10px; color:rgb(50, 50, 179);" href="breakinfo3.html">Caliper Assembly</a></li>
+                        <li class="gall_text_href"><strong>특징</strong> <a style="margin-top: 20px; color:gray;" href="breakinfo3.html">바퀴와 같이 회전하는 디스크를 디스크 외부에 장착된 패드에 의래 클램핑함으로서 패드와 디스크의 마찰력을 이용하여 바퀴의 회전을 멈추게 하는 장치이다.</a></li>
+                    </ul>
+                </li>
+
+                <li class="gall_li " style="width:500px;  position: relative; padding: 20px 20px; float: right;">
+                        <ul class="gall_con">
+                            <li class="gall_href"><a href="breakinfo4.html"><img src="./imgs/imgs02/product4.PNG" alt="cer1" width="500" height="274"></a></li>
+                            <li class="gall_text_href"><strong>제품명</strong> <a style="margin-top: 10px; color:rgb(50, 50, 179);" href="breakinfo4.html">Master Booster Aseembly</a></li>
+                            <li class="gall_text_href"><strong>특징</strong> <a style="margin-top: 20px; color:gray;" href="breakinfo4.html">부스터는 엔진의 흡기매니폴드에서 공급되는 전공과 대기압의 압력차를 이용하여, 피스톤을 작동시키고 그 피스톤으로 증폭된 힘을 만들어 낸다. 즉,큰 유압을 얻기 위하여 부스터에서 증폭된 힘은 적은 페달 압력으로 보다 큰 기계적인 힘을 마스터 실린더에 공급하는 장치이다</a></li>
+                        </ul>
+                </li>
+        </ul>
+        </div>
+
+        <div style="clear: both; height: 120px;" id="finddocboxwrap">
+                <fieldset id="finddocbox">
+                        <legend style="margin-top:10px;" id="finddoc">게시물 검색</legend>
+                        <form name="fsearch" method="get">
+                        <label for="sfl" class="sound_only">검색대상</label>
+                        <select name="sfl" id="sfl">
+                            <option value="wr_subject">제목</option>
+                            <option value="wr_content">내용</option>
+                            <option value="wr_subject||wr_content">제목+내용</option>
+                            <option value="mb_id,1">회원아이디</option>
+                            <option value="wr_name,1">글쓴이</option>
+                        </select>
+                        <label for="stx" class="sound_only">검색어(필수)</label>
+                        <input type="text" name="stx" value="" required id="stx" class="frm_input required" size="15" maxlength="20">
+                        <input type="submit" value="검색" id="btn_submit">
+                        </form>
+                    </fieldset>
+        </div>
+                
+        </article>
+        <!-- //////////////////////////////////////////////////////////////// -->
+        <!-- 여기부터 footer -->
+        <footer style="clear:both">
+            <img src="./imgs/foot_logo.png" alt="footlogo">                
+            <div>상호명 (주)나마스 대표 김민성 주소 서울시 합정동 369-15 한림빌딩 2층<br>
+                Tel 02-322-2061~2 Fax 02-322-3261 사업자등록번호 312-86-04771</div>                    
+            <div>COPYRIGHT (C) (주)나마스 RIGHTS RESERVED.</div>
+        </footer>
+    </div>
+
+    <script>
+            var isOpen=false;
+            $('#location_p1 a #p1_first_li').click(function(){
+                if(!isOpen){
+                    $('#location_p1 a .p1_child_li').slideDown('slow');
+                    // css('display','block');
+                    isOpen=true;
+                }else{
+                    $('#location_p1 a .p1_child_li').slideUp('slow');
+                    // css('display','none');
+                    isOpen=false;
+                }
+            });
+            $('li.p1_child_li').mouseover(function(){                        
+                $(this).css('background-color','rgb(238,238,238)');
+            });
+            $('li.p1_child_li').mouseleave(function(){                        
+                $(this).css('background-color','white');
+            });
+        </script>
+
+</body>
+</html>

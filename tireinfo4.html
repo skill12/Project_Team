@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>A128</title>
+        <link rel="stylesheet" href="./main.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="./main.js"></script>
+        <style>
+
+                #location_p1{
+                              position: absolute;
+                              right: 0px;
+                              z-index: 999;
+                          }
+                          #location_p1 a li{
+                              width: 233px;
+                              height: 49px;                        
+                          }                    
+                          #location_p1 a #p1_first_li{
+                              background: url(./imgs/contact/2depth_arrow.png) 90% center no-repeat;                        
+                              background-color: rgb(50, 50, 179);
+                              text-align: center;
+                              line-height: 3em;
+                              color: white;                                                
+                              font-weight: bold;
+                              border-right: 1px solid rgb(65, 63, 63);
+                          }                    
+                          #location_p1 a .p1_child_li{                       
+                              background: url(./imgs/contact/1depth_arrow.png) 90% center no-repeat;
+                              background-color: white;
+                              text-align: center;
+                              line-height: 3em;
+                              color: darkgray;
+                              font-weight: bold;
+                              display: none;
+                              border-bottom: 1px solid rgb(65, 63, 63);
+                              border-left: 1px solid rgb(65, 63, 63);
+                              border-right: 1px solid rgb(65, 63, 63);                        
+                          }
+                          .container{
+                              font-family: 'namsan';
+                          }
+
+                       
+              </style>
+    </head>
+    <body>   
+        <div id="page">
+            <header>
+                <a href="#"><img src="./imgs/sitemap_icon.png" alt="siteMap"></a>
+                <a href="#"><img src="./imgs/home_icon.png" alt="home"></a>
+                <a href="login.html" id="last_img"><img src="./imgs/admin_icon.png" alt="login"></a>
+                <p id="user_name">사용자 ID 영역</p>
+            </header>
+            <nav>
+                <a href="#" id="logo"><img src="./imgs/logo.png" alt="logo"></a>                
+                <ul id="nav_menu">
+                    <li><a href="#">사업소개</a></li>
+                    <li><a href="#">제품소개</a></li>
+                    <li><a href="#">정비서비스</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </nav>
+            <div id="sub_container">
+                <div id="sub_menu">
+                   <p id="menu_value"></p>
+                    <ul id="sub_1">
+                        <li><a href="index.html">CARIS</a></li>
+                        <li><a href="./manufacturer.html">제조사</a></li>
+                        <li><a href="./business.html">사업영역</a></li>
+                        <li><a href="./contact.html">CONTACT US</a></li>
+                        <li>
+                            <a href="cer.html">인증현황</a></li>
+                    </ul>
+                    <ul id="sub_2">
+                        <li><a href="productlist.html">제동부품</a></li>
+                        <li><a href="tirelist.html">타이어</a></li>                   
+                    </ul>
+                    <ul id="sub_3">
+                        <li><a href="./moveService.html">이동정비(관리) 서비스</a></li>                    
+                    </ul>
+                    <ul id="sub_4">
+                        <li><a href="./board01.html">공지사항</a></li>
+                        <li><a href="./board02.html">고객게시판</a></li>
+                        <li><a href="./board03.html">견적 및 문의</a></li>                    
+                    </ul>
+                </div>
+            </div>
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기까지 header및 nav 메뉴 -->
+
+            <!-- ///////////////////////////////////////////////////////////////// -->
+            <!-- 여기부터 작업하시면 됩니다!! -->
+            <article class="mainarticle">
+
+                    <img id="cerbanner" src="./imgs/imgs02/cerbanner.PNG" alt="cerbanner" width="100%"> 
+    
+                 <div style="widows: 1260px;" id="sub_img"> </div>
+                 <div id="location_wrap">
+                 </div>
+
+
+                <div class="boxcnt">
+                <div style=" display: inline-block;">
+                <p id="info">Total <p id="cercnt"> 2 </p> 건 
+                <p id="pagecnt"> 1 </p> 페이지</p></div>
+
+                <hr>
+
+                <div style="float: left;  width: 1260px; height:500px; padding: 10px; border:1px solid gray; border-radius: 10px;">
+
+                    <div style="float: left; width:50%; padding: 10px; border:1px solid gray; border-radius: 10px;">
+
+                            <img src="./imgs/imgs02/tire4.png" style="width:500px;" alt="">
+
+                    </div>
+
+                    <div style="margin-left: 30px; font-family: 'namsan'; float:left; padding:10px;">
+                        <h4>제품명</h4>
+                        <h4>A165</h4>
+                        <p>특징</p>
+                        <hr style="width:50%;">
+                        <img src="./imgs/imgs02/tireinfodetail3.png" alt="">
+                        <img src="./imgs/imgs02/tireinfodetail2.png" alt="">
+                    </div>
+
+                <div style="clear:both;">
+                <img src="./imgs/imgs02/tireinfo.png" alt="">
+                <img src="./imgs/imgs02/tireinfo3.png" alt="">
+                </div>
+
+                <p style="float:left;"><button style="float:left;"><a href="tirelist.html".html">이전</a></button></p>
+                <p style="float:right;"><button style="float:right"><a href="tireinfo3.html">다음</a></button></p>
+
+
+                </div>
+
+         
+                <div style="margin-top:20px;" id="sit_inf_explan">
+                        <table style="width:100%;">
+                            <colgroup>
+                                <col width="7%" />
+                                <col width="7%" />
+                                <col width="7%" />
+                                <col width="7%" />
+                                <col width="8%" />
+                                <col width="8%" />
+                                <col width="8%" />
+                                <col width="8%" />
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="5%" />
+                                <col width="5%" />
+                            </colgroup>
+                            
+                            <tbody>
+                                <tr>
+                                    <th rowspan="3" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">PATTERN</th>
+                                    <th rowspan="3" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">SIZE</th>
+                                    <th rowspan="3" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">PLY</th>
+                                    <th rowspan="3" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">LI/SS</th>
+                                    <th rowspan="3" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">STANDARD RIM</th>
+                                    <th rowspan="3" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">SIDEWALL SECTION(mm)</th>
+                                    <th rowspan="3" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">O.D.(mm)</th>
+                                    <th rowspan="3" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">TREAD DEPTH(mm)</th>
+                                    <th rowspan="3" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">TYPE</th>
+                                    <th colspan="4" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;border-bottom:1px #ddd solid;">LOAD CAPACITY</th>
+                                    <th colspan="4" style="background-color:#999;padding:5px;color:#fff;text-align:center;border-bottom:1px #ddd solid;">INFLATION PRESSURE</th>
+                                </tr>
+
+                                <tr>
+                                    <th colspan="2" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">single</th>
+                                    <th colspan="2" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">dual</th>
+                                    <th colspan="2" style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">single</th>
+                                    <th colspan="2" style="background-color:#999;padding:5px;color:#fff;text-align:center;">dual</th>
+                                </tr>
+
+                                <tr>
+                                    <th style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">Kg</th>
+                                    <th style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">LBS</th>
+                                    <th style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">Kg</th>
+                                    <th style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">LBS</th>
+                                    <th style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">kPa</th>
+                                    <th style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">PSI</th>
+                                    <th style="background-color:#999;padding:5px;color:#fff;border-right:1px #ddd solid;text-align:center;">kPa</th>
+                                    <th style="background-color:#999;padding:5px;color:#fff;text-align:center;">PSI</th>
+                                </tr>
+                                <tr>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">A166</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">10.00R20</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">18PR</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">149/146J</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">7.5</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">278</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">1054</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">14.5</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">TT</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">3250</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">7160</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">3000</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">6610</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">930</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">135</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">930</td>
+                                    <td style="padding:5px;border-bottom:1px #ddd solid;border-left:1px #ddd solid;text-align:center;">1054</td>
+
+                                </tr>
+                              
+                            </tbody>
+                        </table>    
+                    </div>
+                    
+                
+                
+        </article>
+        <!-- //////////////////////////////////////////////////////////////// -->
+        <!-- 여기부터 footer -->
+        <footer style="clear:both">
+            <img src="./imgs/foot_logo.png" alt="footlogo">                
+            <div>상호명 (주)나마스 대표 김민성 주소 서울시 합정동 369-15 한림빌딩 2층<br>
+                Tel 02-322-2061~2 Fax 02-322-3261 사업자등록번호 312-86-04771</div>                    
+            <div>COPYRIGHT (C) (주)나마스 RIGHTS RESERVED.</div>
+        </footer>
+    </div>
+
+    <script>
+            var isOpen=false;
+            $('#location_p1 a #p1_first_li').click(function(){
+                if(!isOpen){
+                    $('#location_p1 a .p1_child_li').slideDown('slow');
+                    // css('display','block');
+                    isOpen=true;
+                }else{
+                    $('#location_p1 a .p1_child_li').slideUp('slow');
+                    // css('display','none');
+                    isOpen=false;
+                }
+            });
+            $('li.p1_child_li').mouseover(function(){                        
+                $(this).css('background-color','rgb(238,238,238)');
+            });
+            $('li.p1_child_li').mouseleave(function(){                        
+                $(this).css('background-color','white');
+            });
+
+            // function clickBtnPre(){
+            //     history.back();
+            // }
+
+            // function clickBtnFor(){
+            //     location.href('tireinfo2.html');
+            // }
+
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>main</title>
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./main.js"></script>
+
+    </head>
+
+    <body>
+
+    <div style="padding: 10px; width: 400px; height: 400px; font-family:'namsan';" id="find_info" class="container">
+            <h1 id="win_title">회원정보 찾기</h1>
+        
+            <form name="fpasswordlost" action="http://www.carsis.co.kr/bbs/password_lost2.php" onsubmit="return fpasswordlost_submit(this);" method="post" autocomplete="off">
+            <fieldset id="info_fs">
+                <p>
+                    회원가입 시 등록하신 이메일 주소를 입력해 주세요.<br>
+                    해당 이메일로 아이디와 비밀번호 정보를 보내드립니다.
+                </p>
+                <label for="mb_email">E-mail 주소 (필수)</label>
+                <input type="text" name="mb_email" id="mb_email" required class="required frm_input email" size="30">
+            </fieldset>
+            
+        <script>var g5_captcha_url  = "http://www.carsis.co.kr/plugin/kcaptcha";</script>
+        <script src="http://www.carsis.co.kr/plugin/kcaptcha/kcaptcha.js"></script>
+        <fieldset id="captcha" class="captcha">
+        <legend><label for="captcha_key">자동등록방지</label></legend>
+
+        <div class="container">
+        <img style="display:inline-block;" src="./imgs/imgs02/find1.PNG" alt="" id="captcha_img">
+        <button type="button"><a href=""><img src="./imgs/imgs02/findicon2.PNG" alt=""></a></button>
+        <input type="text" name="captcha_key" id="captcha_key" required class="captcha_box required" size="6" maxlength="6">
+        <br>
+        <span>자동등록방지 숫자를 순서대로 입력하세요.</span>
+        </fieldset>    <div class="win_btn">
+            </div>
+                <input type="submit" value="확인" class="btn_submit">
+                <button type="button" onclick="window.close();">창닫기</button>
+           
+            </form>
+        </div>
+    </div>
+        <script>
+        function fpasswordlost_submit(f)
+        {
+            if (!chk_captcha()) return false;
+        
+            return true;
+        }
+        
+        $(function() {
+            var sw = screen.width;
+            var sh = screen.height;
+            var cw = document.body.clientWidth;
+            var ch = document.body.clientHeight;
+            var top  = sh / 2 - ch / 2 - 100;
+            var left = sw / 2 - cw / 2;
+            moveTo(left, top);
+        });
+        </script>
+        <!-- } 회원정보 찾기 끝 -->
+        
+        <!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+        <!--[if lte IE 7]>
+        <script>
+        $(function() {
+            var $sv_use = $(".sv_use");
+            var count = $sv_use.length;
+        
+            $sv_use.each(function() {
+                $(this).css("z-index", count);
+                $(this).css("position", "relative");
+                count = count - 1;
+            });
+        });
+        </script>
+        <![endif]-->
+        
+        
+</body>
+</html>
